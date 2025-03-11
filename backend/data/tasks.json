@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Complete project proposal",
+    "description": "Write and submit the project proposal document.",
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Review PRs",
+    "description": "Check and approve pull requests on GitHub.",
+    "status": false
+  },
+  {
+    "id": 3,
+    "title": "Fix login bug",
+    "description": "Investigate and resolve the authentication issue in the login flow.",
+    "status": true
+  },
+  {
+    "id": 4,
+    "title": "Prepare weekly report",
+    "description": "Summarize work progress and send it to the manager.",
+    "status": false
+  },
+  {
+    "id": 5,
+    "title": "Refactor API endpoints",
+    "description": "Improve API response structure and remove redundant endpoints.",
+    "status": false
+  }
+]
