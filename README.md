@@ -3,7 +3,7 @@ A full-stack Task Manager application built with **React (TypeScript)** and **Ex
 
 ## Prerequisites
 Before running the project, make sure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or later)
+- [Node.js](https://nodejs.org/)
 - [Git](https://git-scm.com/)
 
 ## Getting Started
