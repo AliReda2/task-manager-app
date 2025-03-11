@@ -7,7 +7,7 @@ const TaskItem = ({
 }) => {
   const { loading, updateExistingTask, removeTask } = useTaskContext();
 
-  if (loading) return <p>Loading task...</p>; // ✅ Show loading state
+  if (loading) return <p>Loading task...</p>; 
 
   return (
     <div className="task-item">

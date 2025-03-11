@@ -1,7 +1,6 @@
 import { Router } from "express";
 import {
   getTasks,
-  // getTaskById,
   createTask,
   updateTask,
   deleteTask,
@@ -11,9 +10,6 @@ const router: Router = Router();
 
 // Get all tasks
 router.get("/", getTasks);
-
-// Get a single task by ID
-// router.get("/:id", getTaskById);
 
 // Create a new task
 router.post("/", createTask);

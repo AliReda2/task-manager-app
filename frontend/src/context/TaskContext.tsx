@@ -9,7 +9,7 @@ import { fetchTasks, addTask, updateTask, deleteTask } from "../services/api";
 
 // Define task type
 export interface Task {
-  _id: string; // Change from number to string to match MongoDB ObjectId
+  _id: string; 
   title: string;
   description: string;
   status: boolean;
@@ -19,9 +19,9 @@ export interface Task {
 interface TaskContextType {
   tasks: Task[];
   loading: boolean;
-  addNewTask: (task: Omit<Task, "_id">) => void; // No _id when adding a task
-  updateExistingTask: (id: string, task: Partial<Task>) => void; // Use _id as string
-  removeTask: (_id: string) => void; // Use _id as string
+  addNewTask: (task: Omit<Task, "_id">) => void;
+  updateExistingTask: (id: string, task: Partial<Task>) => void; 
+  removeTask: (_id: string) => void;
 }
 
 // Create Context

@@ -1,6 +1,6 @@
 import { MongoMemoryServer } from "mongodb-memory-server";
 import mongoose from "mongoose";
-import { server } from "../src/server"; // Import the server
+import { server } from "../src/server"; 
 import request from "supertest";
 
 let mongoServer: MongoMemoryServer | null = null; // Initialize with null
@@ -24,7 +24,7 @@ describe("Task API", () => {
 
   // Test GET /tasks
   it("should fetch all tasks", async () => {
-    const response = await request(server).get("/tasks"); // Use the server instance instead of app
+    const response = await request(server).get("/tasks"); 
     expect(response.status).toBe(200);
     expect(Array.isArray(response.body)).toBe(true);
   });
@@ -47,13 +47,6 @@ describe("Task API", () => {
     expect(response.body.title).toBe(newTask.title);
     taskId = response.body._id;
   });
-
-  // Test GET /tasks/:id
-  //   it("should fetch a task by ID", async () => {
-  //     const response = await request(app).get(`/tasks/${taskId}`);
-  //     expect(response.status).toBe(200);
-  //     expect(response.body).toHaveProperty("_id", taskId);
-  //   });
 
   // Test PUT /tasks/:id
   it("should update a task", async () => {

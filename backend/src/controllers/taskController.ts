@@ -12,24 +12,6 @@ export const getTasks = async (req: Request, res: Response) => {
   }
 };
 
-// Get a single task by ID
-// export const getTaskById = async (
-//   req: Request,
-//   res: Response
-// ): Promise<void> => {
-//   const { id } = req.params;
-//   try {
-//     const task = await Task.findById(id);
-//     if (!task) {
-//       res.status(404).json({ message: "Task not found" });
-//       return;
-//     }
-//     res.json(task);
-//   } catch (error) {
-//     res.status(500).json({ message: "Error fetching task", error });
-//   }
-// };
-
 // Create a new task
 export const createTask = async (
   req: Request,

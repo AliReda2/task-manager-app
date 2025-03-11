@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const cors = require("cors");
 require("dotenv").config(); // Load environment variables from .env file
 
-import TaskRouter from "./routes/taskRoutes"; // Your task router import
+import TaskRouter from "./routes/taskRoutes"; 
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -21,7 +21,7 @@ app.use("/tasks", TaskRouter);
 
 
 // MongoDB connection
-const mongoUri = process.env.MONGO_URI; // Use the MONGO_URI from the .env file
+const mongoUri = process.env.MONGO_URI;
 if (!mongoUri) {
   console.error("MongoDB URI not found in .env file.");
   process.exit(1); // Exit if MONGO_URI is not found
